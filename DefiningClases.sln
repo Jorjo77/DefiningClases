@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefiningClases", "DefiningClases\DefiningClases.csproj", "{DB708005-EBA7-4B67-8552-F19161F22121}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningClases", "DefiningClases\DefiningClases.csproj", "{DB708005-EBA7-4B67-8552-F19161F22121}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2083F31-7342-4F20-AB0D-D900C1809DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManufacturer", "CarManufacturer\CarManufacturer.csproj", "{045DB6BF-9D32-4BE4-A642-F8D114CA61EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManufacturer", "CarManufacturer\CarManufacturer.csproj", "{045DB6BF-9D32-4BE4-A642-F8D114CA61EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarExtention", "CarExtention\CarExtention.csproj", "{6FEDA7B1-DD0C-4348-B838-335DD76C728A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarExtention", "CarExtention\CarExtention.csproj", "{6FEDA7B1-DD0C-4348-B838-335DD76C728A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{61064389-977D-40E6-9DAD-926D7DF4D558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{6FEDA7B1-DD0C-4348-B838-335DD76C728A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEDA7B1-DD0C-4348-B838-335DD76C728A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEDA7B1-DD0C-4348-B838-335DD76C728A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61064389-977D-40E6-9DAD-926D7DF4D558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61064389-977D-40E6-9DAD-926D7DF4D558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61064389-977D-40E6-9DAD-926D7DF4D558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61064389-977D-40E6-9DAD-926D7DF4D558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
