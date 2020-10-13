@@ -6,10 +6,10 @@ namespace CarManufacturer
     {
         static void Main(string[] args)
         {
-            Car car = new Car("Lambo", "Nai dobtia", 1);
+            Car car = new Car("Lambo", "Nai dobtia", 2010, 250, 9);
             Car golfa = new Car();
             Engine engine = new Engine(650, 1000);
-            Tire[] tires = new Tire[]
+            Tire[] tires = new Tire[4]
             {
                 new Tire(2008, 1200),
                 new Tire(2008, 1200),
