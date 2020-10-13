@@ -6,7 +6,12 @@ namespace DateModifier
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string firstDateAsString = Console.ReadLine();
+            string secondDateAsString = Console.ReadLine();
+            DateModifier dateModifier = new DateModifier();
+            var result = dateModifier.GetDayDifference(firstDateAsString, secondDateAsString);
+
+            Console.WriteLine(Math.Abs(result));
         }
     }
 }
