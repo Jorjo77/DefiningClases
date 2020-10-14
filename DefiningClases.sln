@@ -13,19 +13,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarExtention", "CarExtentio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructors\Constructors.csproj", "{61064389-977D-40E6-9DAD-926D7DF4D558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConstructors", "CarConstructors\CarConstructors.csproj", "{A04030AB-ABD7-4B99-A565-B7EC223C9175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarConstructors", "CarConstructors\CarConstructors.csproj", "{A04030AB-ABD7-4B99-A565-B7EC223C9175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerationsDemo", "EnumerationsDemo\EnumerationsDemo.csproj", "{BB6B4AD8-379D-4DCA-A0E2-B818E9D3D33C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerationsDemo", "EnumerationsDemo\EnumerationsDemo.csproj", "{BB6B4AD8-379D-4DCA-A0E2-B818E9D3D33C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClasses", "StaticClasses\StaticClasses.csproj", "{8C785D3B-4410-4C7D-B20F-F43ACEE686D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticClasses", "StaticClasses\StaticClasses.csproj", "{8C785D3B-4410-4C7D-B20F-F43ACEE686D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMVManufacturer", "BMVManufacturer\BMVManufacturer.csproj", "{BBECFD8A-F9BA-4013-BC05-ACC9B0A232CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMVManufacturer", "BMVManufacturer\BMVManufacturer.csproj", "{BBECFD8A-F9BA-4013-BC05-ACC9B0A232CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineAClassPerson", "DefineAClassPerson\DefineAClassPerson.csproj", "{E202A09F-3465-4E37-9A52-44160136EB0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefineAClassPerson", "DefineAClassPerson\DefineAClassPerson.csproj", "{E202A09F-3465-4E37-9A52-44160136EB0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{6DC7A97E-B050-4F3C-ADB6-E3CF7BE73DFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox", "SandBox\SandBox.csproj", "{6DC7A97E-B050-4F3C-ADB6-E3CF7BE73DFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateModifier", "DateModifier\DateModifier.csproj", "{CB826D3F-571A-4130-A00B-4ED874F9B633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateModifier", "DateModifier\DateModifier.csproj", "{CB826D3F-571A-4130-A00B-4ED874F9B633}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedRacing", "SpeedRacing\SpeedRacing.csproj", "{275AF58D-E23E-478B-AFE9-39909D39660C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RawData", "RawData\RawData.csproj", "{73E46634-3AC1-4CCA-9839-E8F82AC26F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniParking", "SoftUniParking\SoftUniParking.csproj", "{8E79D134-0E06-40DD-9973-EDF0CDDE6554}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +83,18 @@ Global
 		{CB826D3F-571A-4130-A00B-4ED874F9B633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB826D3F-571A-4130-A00B-4ED874F9B633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB826D3F-571A-4130-A00B-4ED874F9B633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275AF58D-E23E-478B-AFE9-39909D39660C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275AF58D-E23E-478B-AFE9-39909D39660C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275AF58D-E23E-478B-AFE9-39909D39660C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275AF58D-E23E-478B-AFE9-39909D39660C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E46634-3AC1-4CCA-9839-E8F82AC26F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E46634-3AC1-4CCA-9839-E8F82AC26F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E46634-3AC1-4CCA-9839-E8F82AC26F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E46634-3AC1-4CCA-9839-E8F82AC26F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E79D134-0E06-40DD-9973-EDF0CDDE6554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E79D134-0E06-40DD-9973-EDF0CDDE6554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E79D134-0E06-40DD-9973-EDF0CDDE6554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E79D134-0E06-40DD-9973-EDF0CDDE6554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
