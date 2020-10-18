@@ -1,23 +1,47 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PokemonTrainer
+namespace DefiningClasses
 {
     class Trainer
     {
+        private string name;
+        private int numberOfBadges;
+        private List<Pokemon> pokemons;
 
-        List<Pokemon> pokemons;
-        public Trainer(string name, int badgesNumber, Pokemon pokemon)
+        public Trainer(string name)
         {
-            Name = name;
-            BadgesNumber = badgesNumber;
+            this.name = name;
+            this.numberOfBadges = 0;
             this.pokemons = new List<Pokemon>();
-            pokemons.Add(pokemon);
         }
 
-
-        public string Name { get; set; }
-        public int BadgesNumber { get; set; }
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+        }
+        public int NumberOfBadges
+        {
+            get
+            {
+                return this.numberOfBadges;
+            }
+        }
+        public List<Pokemon> Pokemons
+        {
+            get
+            {
+                return this.pokemons;
+            }
+        }
+        public void IncreaceNumberOfBadges()
+        {
+            this.numberOfBadges++;
+        }
     }
 }

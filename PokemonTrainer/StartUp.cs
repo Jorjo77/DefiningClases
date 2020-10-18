@@ -1,39 +1,63 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace PokemonTrainer
+namespace DefiningClasses
 {
-    public class StartUp
+    class StartUp
     {
         static void Main(string[] args)
         {
-
             List<Trainer> trainers = new List<Trainer>();
 
-            while (true)
+            string command = Console.ReadLine();
+
+            while (command != "Tournament")
             {
-
-                string inputData = Console.ReadLine();
-                if (inputData== "Tournament")
+                var splittedCommand = command.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+                string trainerName = splittedCommand[0];
+                string pokemonName = splittedCommand[1];
+                string element = splittedCommand[2];
+                int health = int.Parse(splittedCommand[3]);
+                Trainer trainer = trainers.FirstOrDefault(x => x.Name == trainerName);
+                if (trainer != null)
                 {
-                    break;
+                    trainer.Pokemons.Add(new Pokemon(pokemonName, element, health));
                 }
-                string[] splittedInputData = inputData.Split();
-                string trainerName = splittedInputData[0];
-                string pokemonName = splittedInputData[1];
-                string pokemonElement = splittedInputData[2];
-                int pokemonHealth = int.Parse(splittedInputData[3]);
-
-                Pokemon pokemon = new Pokemon(pokemonName, pokemonElement, pokemonHealth);
-
-                Trainer trainer = new Trainer(trainerName, 0, pokemon);
-
-                if (!trainers.Contains(trainer))
+                else
                 {
-                    trainers.Add(trainer);
+                    Trainer newTrainer = new Trainer(trainerName);
+                    newTrainer.Pokemons.Add(new Pokemon(pokemonName, element, health));
+                    trainers.Add(newTrainer);
                 }
-
+                command = Console.ReadLine();
             }
+
+            command = Console.ReadLine();
+            while (command != "End")
+            {
+                for (int i = 0; i < trainers.Count; i++)
+                {
+                    if (!trainers[i].Pokemons.Any(x => x.Element == command))
+                    {
+                        foreach (var pokemon in trainers[i].Pokemons)
+                        {
+                            pokemon.ReduceHealth();
+                        }
+                    }
+                    else
+                    {
+                        trainers[i].IncreaceNumberOfBadges();
+                    }
+                }
+                command = Console.ReadLine();
+            }
+            foreach (var pokemon in trainers)
+            {
+                pokemon.Pokemons.RemoveAll(x => x.Health <= 0);
+            }
+            trainers.OrderByDescending(x => x.NumberOfBadges).ToList().ForEach(x => Console.WriteLine($"{x.Name} {x.NumberOfBadges} {x.Pokemons.Count}"));
         }
     }
 }
